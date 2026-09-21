@@ -1,0 +1,2366 @@
+<!-- =========================================================
+     META PIXEL AREA
+     
+     IMPORTANT:
+     अगर Meta Pixel पहले से WordPress/Elementor/GTM में लगा है,
+     तो नीचे कुछ PASTE मत करना।
+
+     अगर Pixel सिर्फ इसी HTML widget में लगाना है,
+     तो अपना पूरा Meta Pixel Base Code नीचे paste करें.
+     
+     META PIXEL CODE START
+     PASTE YOUR META PIXEL BASE CODE BELOW THIS LINE
+     
+     META PIXEL CODE END
+     ========================================================= -->
+
+
+<style>
+/* =========================================================
+   PITRA DOSH FREE COURSE
+   FINAL PREMIUM LANDING PAGE
+   Elementor HTML Widget
+   Mobile First / Lightweight / Fast Loading
+   ========================================================= */
+
+:root{
+  --pd-bg:#06111e;
+  --pd-bg2:#0b1b2d;
+  --pd-card:#10263a;
+  --pd-card2:#0d2033;
+
+  --pd-gold:#e4b653;
+  --pd-gold2:#ffdb82;
+
+  --pd-red:#8d171d;
+  --pd-red2:#b6242b;
+
+  --pd-green:#18a957;
+  --pd-green2:#25c968;
+
+  --pd-white:#ffffff;
+  --pd-muted:#c8d1da;
+
+  --pd-border:rgba(255,255,255,.12);
+}
+
+
+/* ================= BASIC ================= */
+
+.pd-page,
+.pd-page *{
+  box-sizing:border-box;
+}
+
+.pd-page{
+  width:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+
+  color:var(--pd-white);
+  background:var(--pd-bg);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  line-height:1.5;
+}
+
+.pd-page a{
+  text-decoration:none!important;
+}
+
+.pd-container{
+  width:min(1120px,92%);
+  margin:0 auto;
+}
+
+.pd-section{
+  position:relative;
+  padding:72px 0;
+}
+
+
+/* =========================================================
+   BRAND STRIP
+   LOGO ONLY HERE — NOT ON PHOTO
+   ========================================================= */
+
+.pd-brand-strip{
+  background:#040b13;
+  border-bottom:1px solid rgba(228,182,83,.22);
+}
+
+.pd-brand-inner{
+  min-height:88px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:18px;
+}
+
+.pd-brand-logo{
+  width:68px;
+  height:68px;
+
+  object-fit:contain;
+
+  padding:4px;
+
+  background:#fff;
+
+  border-radius:50%;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.25);
+}
+
+.pd-brand-text{
+  text-align:left;
+}
+
+.pd-brand-title{
+  color:var(--pd-gold2);
+
+  font-size:18px;
+  font-weight:900;
+
+  letter-spacing:1.1px;
+}
+
+.pd-brand-subtitle{
+  margin-top:2px;
+
+  color:#d6dce3;
+
+  font-size:11px;
+  font-weight:600;
+
+  letter-spacing:.8px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.pd-hero{
+  min-height:700px;
+
+  display:flex;
+  align-items:center;
+
+  background:
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(228,182,83,.14),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(141,23,29,.25),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      135deg,
+      #040a12 0%,
+      #0a192a 55%,
+      #251013 100%
+    );
+}
+
+.pd-hero-grid{
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(320px,430px);
+
+  gap:50px;
+
+  align-items:center;
+}
+
+.pd-eyebrow{
+  display:inline-block;
+
+  padding:8px 15px;
+
+  border-radius:30px;
+
+  border:1px solid
+    rgba(255,219,130,.4);
+
+  background:
+    rgba(228,182,83,.07);
+
+  color:var(--pd-gold2);
+
+  font-size:12px;
+  font-weight:900;
+
+  letter-spacing:1px;
+
+  margin-bottom:20px;
+}
+
+.pd-hero h1{
+  margin:0 0 8px;
+
+  font-size:
+    clamp(42px,6vw,72px);
+
+  line-height:.98;
+
+  letter-spacing:-2px;
+
+  font-weight:900;
+}
+
+.pd-highlight{
+  color:var(--pd-gold2);
+}
+
+.pd-hero-subtitle{
+  margin:0 0 18px;
+
+  color:#fff;
+
+  font-size:
+    clamp(24px,3vw,39px);
+
+  line-height:1.1;
+
+  font-weight:800;
+}
+
+.pd-hero-description{
+  max-width:650px;
+
+  margin:0 0 24px;
+
+  color:var(--pd-muted);
+
+  font-size:17px;
+}
+
+.pd-hero-points{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:9px;
+
+  margin-bottom:28px;
+}
+
+.pd-hero-point{
+  padding:9px 13px;
+
+  border-radius:9px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  border:1px solid
+    var(--pd-border);
+
+  color:#fff;
+
+  font-size:13px;
+  font-weight:700;
+}
+
+
+/* CTA */
+
+.pd-cta{
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  min-height:56px;
+
+  padding:14px 28px;
+
+  border-radius:13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pd-green),
+      var(--pd-green2)
+    );
+
+  color:#fff!important;
+
+  font-size:15px;
+  font-weight:900;
+
+  box-shadow:
+    0 12px 30px
+    rgba(24,169,87,.24);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.pd-cta:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 15px 35px
+    rgba(24,169,87,.32);
+}
+
+
+/* HERO PHOTO */
+
+.pd-hero-photo-wrap{
+  position:relative;
+}
+
+.pd-photo-frame{
+  padding:8px;
+
+  border-radius:27px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--pd-gold),
+      rgba(228,182,83,.08),
+      var(--pd-red)
+    );
+
+  box-shadow:
+    0 25px 65px
+    rgba(0,0,0,.48);
+}
+
+.pd-photo{
+  display:block;
+
+  width:100%;
+
+  aspect-ratio:4/5;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  border-radius:20px;
+}
+
+
+/* IMPORTANT:
+   NO LOGO ON PHOTO
+*/
+
+
+/* =========================================================
+   QUICK INFO BAR
+   ========================================================= */
+
+.pd-info{
+  background:#081727;
+
+  border-top:
+    1px solid rgba(228,182,83,.12);
+
+  border-bottom:
+    1px solid rgba(228,182,83,.12);
+}
+
+.pd-info-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:12px;
+}
+
+.pd-info-item{
+  padding:18px 12px;
+
+  text-align:center;
+
+  border-right:
+    1px solid
+    rgba(255,255,255,.08);
+}
+
+.pd-info-item:last-child{
+  border-right:0;
+}
+
+.pd-info-icon{
+  font-size:23px;
+
+  margin-bottom:5px;
+}
+
+.pd-info-item strong{
+  display:block;
+
+  color:var(--pd-gold2);
+
+  font-size:15px;
+}
+
+.pd-info-item span{
+  display:block;
+
+  margin-top:3px;
+
+  color:var(--pd-muted);
+
+  font-size:12px;
+}
+
+
+/* =========================================================
+   COMMON HEADINGS
+   ========================================================= */
+
+.pd-heading{
+  max-width:800px;
+
+  margin:0 auto 42px;
+
+  text-align:center;
+}
+
+.pd-heading small{
+  display:block;
+
+  margin-bottom:9px;
+
+  color:var(--pd-gold2);
+
+  font-size:11px;
+  font-weight:900;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+}
+
+.pd-heading h2{
+  margin:0 0 12px;
+
+  font-size:
+    clamp(31px,4vw,48px);
+
+  line-height:1.1;
+
+  font-weight:900;
+}
+
+.pd-heading p{
+  margin:0;
+
+  color:var(--pd-muted);
+
+  font-size:15px;
+}
+
+
+/* =========================================================
+   COURSE INTRO
+   ========================================================= */
+
+.pd-course{
+  background:
+    linear-gradient(
+      180deg,
+      #0b1b2c,
+      #06111e
+    );
+}
+
+.pd-free-banner{
+  max-width:760px;
+
+  margin:
+    0 auto 35px;
+
+  padding:18px;
+
+  text-align:center;
+
+  border-radius:15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pd-red),
+      #551015
+    );
+
+  border:
+    1px solid
+    rgba(255,219,130,.25);
+
+  font-size:19px;
+  font-weight:900;
+}
+
+.pd-free-banner span{
+  color:var(--pd-gold2);
+}
+
+
+/* =========================================================
+   TOPICS
+   ========================================================= */
+
+.pd-topic-grid{
+  max-width:930px;
+
+  margin:0 auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:12px;
+}
+
+.pd-topic{
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:13px;
+
+  padding:17px;
+
+  border-radius:13px;
+
+  background:
+    rgba(255,255,255,.045);
+
+  border:
+    1px solid
+    var(--pd-border);
+}
+
+.pd-number{
+  flex:0 0 33px;
+
+  width:33px;
+  height:33px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:var(--pd-gold);
+
+  color:#16100a;
+
+  font-size:13px;
+  font-weight:900;
+}
+
+.pd-topic strong{
+  display:block;
+
+  font-size:14px;
+
+  line-height:1.45;
+}
+
+
+/* =========================================================
+   EVENT
+   ========================================================= */
+
+.pd-event{
+  background:
+    radial-gradient(
+      circle at 50% 0,
+      rgba(228,182,83,.13),
+      transparent 42%
+    ),
+    #081625;
+}
+
+.pd-event-box{
+  max-width:1000px;
+
+  margin:auto;
+
+  padding:38px;
+
+  border-radius:25px;
+
+  border:
+    1px solid
+    rgba(228,182,83,.3);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(141,23,29,.36),
+      rgba(13,29,46,.9)
+    );
+}
+
+.pd-event-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:14px;
+
+  margin-bottom:30px;
+}
+
+.pd-event-card{
+  text-align:center;
+
+  padding:22px 15px;
+
+  border-radius:15px;
+
+  background:
+    rgba(255,255,255,.055);
+
+  border:
+    1px solid
+    var(--pd-border);
+}
+
+.pd-event-card-icon{
+  font-size:25px;
+
+  margin-bottom:7px;
+}
+
+.pd-event-card strong{
+  display:block;
+
+  color:var(--pd-gold2);
+
+  font-size:20px;
+}
+
+.pd-event-card span{
+  display:block;
+
+  margin-top:3px;
+
+  color:var(--pd-muted);
+
+  font-size:12px;
+}
+
+.pd-event-center{
+  text-align:center;
+}
+
+.pd-event-center h2{
+  margin:0 0 9px;
+
+  font-size:
+    clamp(28px,4vw,42px);
+}
+
+.pd-event-center p{
+  max-width:700px;
+
+  margin:
+    0 auto 24px;
+
+  color:var(--pd-muted);
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.pd-benefits{
+  background:#06111e;
+}
+
+.pd-benefit-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:16px;
+}
+
+.pd-benefit{
+  padding:25px 17px;
+
+  text-align:center;
+
+  border-radius:17px;
+
+  background:
+    rgba(255,255,255,.045);
+
+  border:
+    1px solid
+    var(--pd-border);
+}
+
+.pd-benefit-icon{
+  width:48px;
+  height:48px;
+
+  margin:
+    0 auto 13px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  border-radius:13px;
+
+  background:
+    rgba(228,182,83,.11);
+
+  color:var(--pd-gold2);
+
+  font-size:21px;
+}
+
+.pd-benefit strong{
+  display:block;
+
+  margin-bottom:6px;
+
+  font-size:15px;
+}
+
+.pd-benefit p{
+  margin:0;
+
+  color:var(--pd-muted);
+
+  font-size:13px;
+}
+
+
+/* =========================================================
+   INSTRUCTOR
+   ========================================================= */
+
+.pd-instructor{
+  background:
+    linear-gradient(
+      180deg,
+      #0d1d2e,
+      #111927
+    );
+}
+
+.pd-instructor-grid{
+  max-width:920px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    260px 1fr;
+
+  align-items:center;
+
+  gap:42px;
+}
+
+.pd-instructor-photo{
+  display:block;
+
+  width:260px;
+  height:260px;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  border-radius:50%;
+
+  border:
+    5px solid
+    var(--pd-gold);
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.35);
+}
+
+.pd-instructor h2{
+  margin:0 0 7px;
+
+  font-size:36px;
+}
+
+.pd-role{
+  margin-bottom:15px;
+
+  color:var(--pd-gold2);
+
+  font-weight:800;
+
+  font-size:14px;
+}
+
+.pd-instructor p{
+  margin:0 0 18px;
+
+  color:var(--pd-muted);
+}
+
+.pd-tags{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:7px;
+}
+
+.pd-tag{
+  padding:7px 10px;
+
+  border-radius:30px;
+
+  background:
+    rgba(228,182,83,.09);
+
+  border:
+    1px solid
+    rgba(228,182,83,.22);
+
+  color:var(--pd-gold2);
+
+  font-size:11px;
+
+  font-weight:800;
+}
+
+
+/* =========================================================
+   100+ COURSES
+   ========================================================= */
+
+.pd-library{
+  background:
+    linear-gradient(
+      180deg,
+      #071321,
+      #0b1b2c
+    );
+}
+
+.pd-library-grid{
+  max-width:900px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:14px;
+}
+
+.pd-library-card{
+  padding:23px 15px;
+
+  text-align:center;
+
+  border-radius:16px;
+
+  background:
+    rgba(255,255,255,.045);
+
+  border:
+    1px solid
+    var(--pd-border);
+}
+
+.pd-library-card-icon{
+  margin-bottom:9px;
+
+  color:var(--pd-gold2);
+
+  font-size:24px;
+}
+
+.pd-library-card strong{
+  font-size:15px;
+}
+
+
+/* =========================================================
+   COMMUNITY
+   ========================================================= */
+
+.pd-community{
+  text-align:center;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(24,169,87,.13),
+      transparent 43%
+    ),
+    #06111d;
+}
+
+.pd-community-box{
+  max-width:850px;
+
+  margin:auto;
+
+  padding:50px 25px;
+
+  border-radius:25px;
+
+  border:
+    1px solid
+    rgba(24,169,87,.25);
+
+  background:
+    rgba(255,255,255,.035);
+}
+
+.pd-community-box h2{
+  margin:0 0 13px;
+
+  font-size:
+    clamp(31px,4vw,46px);
+
+  line-height:1.1;
+}
+
+.pd-community-box p{
+  max-width:700px;
+
+  margin:
+    0 auto 25px;
+
+  color:var(--pd-muted);
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.pd-faq{
+  background:#06111e;
+}
+
+.pd-faq-list{
+  max-width:850px;
+
+  margin:auto;
+
+  display:grid;
+
+  gap:11px;
+}
+
+.pd-faq details{
+  padding:18px 20px;
+
+  border-radius:13px;
+
+  border:
+    1px solid
+    var(--pd-border);
+
+  background:
+    rgba(255,255,255,.04);
+}
+
+.pd-faq summary{
+  cursor:pointer;
+
+  font-weight:800;
+
+  font-size:14px;
+}
+
+.pd-faq details p{
+  margin:
+    12px 0 0;
+
+  color:var(--pd-muted);
+
+  font-size:13px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.pd-final{
+  padding:80px 0;
+
+  text-align:center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #471015,
+      #091727
+    );
+}
+
+.pd-final h2{
+  margin:0 0 13px;
+
+  font-size:
+    clamp(32px,4vw,50px);
+}
+
+.pd-final p{
+  max-width:680px;
+
+  margin:
+    0 auto 25px;
+
+  color:var(--pd-muted);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.pd-footer{
+  padding:22px 15px;
+
+  text-align:center;
+
+  background:#030a12;
+
+  color:#7f8b99;
+
+  font-size:11px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:850px){
+
+  .pd-section{
+    padding:55px 0;
+  }
+
+  .pd-hero{
+    min-height:auto;
+
+    padding:
+      50px 0 60px;
+  }
+
+  .pd-hero-grid{
+    grid-template-columns:1fr;
+
+    gap:35px;
+  }
+
+  .pd-hero-copy{
+    text-align:center;
+  }
+
+  .pd-hero-description{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .pd-hero-points{
+    justify-content:center;
+  }
+
+  .pd-hero-photo-wrap{
+    max-width:450px;
+
+    width:100%;
+
+    margin:auto;
+  }
+
+  .pd-info-grid{
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+  .pd-info-item{
+    border-right:0;
+    border-bottom:
+      1px solid
+      rgba(255,255,255,.08);
+  }
+
+  .pd-topic-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pd-benefit-grid{
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+  .pd-instructor-grid{
+    grid-template-columns:1fr;
+
+    text-align:center;
+  }
+
+  .pd-instructor-photo{
+    margin:auto;
+  }
+
+  .pd-tags{
+    justify-content:center;
+  }
+
+  .pd-library-grid{
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+}
+
+
+@media(max-width:520px){
+
+  .pd-container{
+    width:92%;
+  }
+
+  .pd-brand-inner{
+    min-height:78px;
+
+    gap:11px;
+  }
+
+  .pd-brand-logo{
+    width:57px;
+    height:57px;
+  }
+
+  .pd-brand-title{
+    font-size:15px;
+  }
+
+  .pd-brand-subtitle{
+    font-size:9px;
+  }
+
+  .pd-hero h1{
+    font-size:41px;
+  }
+
+  .pd-hero-subtitle{
+    font-size:26px;
+  }
+
+  .pd-hero-description{
+    font-size:15px;
+  }
+
+  .pd-cta{
+    width:100%;
+
+    min-height:57px;
+  }
+
+  .pd-info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pd-info-item{
+    border-bottom:
+      1px solid
+      rgba(255,255,255,.08);
+  }
+
+  .pd-event-box{
+    padding:25px 17px;
+  }
+
+  .pd-event-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pd-benefit-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pd-instructor-photo{
+    width:210px;
+    height:210px;
+  }
+
+  .pd-instructor h2{
+    font-size:30px;
+  }
+
+  .pd-library-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+@media(prefers-reduced-motion:reduce){
+
+  .pd-cta{
+    transition:none;
+  }
+}
+</style>
+
+
+<div class="pd-page">
+
+
+  <!-- =====================================================
+       BRAND
+       LOGO IS ONLY HERE
+       ===================================================== -->
+
+  <section class="pd-brand-strip">
+
+    <div class="pd-container">
+
+      <div class="pd-brand-inner">
+
+        <img
+          class="pd-brand-logo"
+          src="https://i.ibb.co/FqzMMLbz/IMG-20260920-WA0007.jpg"
+          alt="Rudra Shivalaya Jyotish Anusandhan Kendra"
+          loading="eager"
+        >
+
+        <div class="pd-brand-text">
+
+          <div class="pd-brand-title">
+            RUDRA SHIVALAYA
+          </div>
+
+          <div class="pd-brand-subtitle">
+            JYOTISH ANUSANDHAN KENDRA
+            &nbsp; • &nbsp;
+            KNOWLEDGE • GUIDANCE • TRANSFORMATION
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
+  <section class="pd-section pd-hero">
+
+    <div class="pd-container">
+
+      <div class="pd-hero-grid">
+
+
+        <div class="pd-hero-copy">
+
+          <div class="pd-eyebrow">
+            FREE COURSE SERIES • SPECIAL LIVE COURSE
+          </div>
+
+
+          <h1>
+            FREE
+            <span class="pd-highlight">
+              PITRA DOSH
+            </span>
+          </h1>
+
+
+          <div class="pd-hero-subtitle">
+            Remedial Course
+          </div>
+
+
+          <p class="pd-hero-description">
+
+            पितृदोष का वास्तविक अर्थ,
+            कुंडली में पहचान, पारंपरिक उपाय
+            और पितृ पूजा एवं श्राद्ध से जुड़ी
+            महत्वपूर्ण जानकारी को एक structured
+            2-Day live course में समझें।
+
+          </p>
+
+
+          <div class="pd-hero-points">
+
+            <div class="pd-hero-point">
+              ✓ Causes
+            </div>
+
+            <div class="pd-hero-point">
+              ✓ Identification
+            </div>
+
+            <div class="pd-hero-point">
+              ✓ Traditional Remedies
+            </div>
+
+            <div class="pd-hero-point">
+              ✓ Practical Information
+            </div>
+
+          </div>
+
+
+          <a
+            href="https://chat.whatsapp.com/KJzXMa6eRyEFUX4fFdheus"
+            class="pd-cta pd-community-cta"
+            data-cta="whatsapp-community"
+            data-cta-location="hero"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Free WhatsApp Community
+          </a>
+
+        </div>
+
+
+        <!-- PHOTO ONLY -->
+        <div class="pd-hero-photo-wrap">
+
+          <div class="pd-photo-frame">
+
+            <img
+              class="pd-photo"
+              src="https://i.ibb.co/VpWKshRt/IMG-20260920-WA0010.jpg"
+              alt="Tarun Thakur - Astrology and Spiritual Expert"
+              loading="eager"
+              fetchpriority="high"
+            >
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       QUICK DETAILS
+       ===================================================== -->
+
+  <section class="pd-section pd-info">
+
+    <div class="pd-container">
+
+      <div class="pd-info-grid">
+
+
+        <div class="pd-info-item">
+
+          <div class="pd-info-icon">
+            📅
+          </div>
+
+          <strong>
+            24 &amp; 25 September
+          </strong>
+
+          <span>
+            2-Day Course
+          </span>
+
+        </div>
+
+
+        <div class="pd-info-item">
+
+          <div class="pd-info-icon">
+            🎥
+          </div>
+
+          <strong>
+            LIVE ON ZOOM
+          </strong>
+
+          <span>
+            Live Online Session
+          </span>
+
+        </div>
+
+
+        <div class="pd-info-item">
+
+          <div class="pd-info-icon">
+            🆓
+          </div>
+
+          <strong>
+            100% FREE
+          </strong>
+
+          <span>
+            Course Admission
+          </span>
+
+        </div>
+
+
+        <div class="pd-info-item">
+
+          <div class="pd-info-icon">
+            👥
+          </div>
+
+          <strong>
+            WhatsApp Community
+          </strong>
+
+          <span>
+            Course Updates
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       COURSE
+       ===================================================== -->
+
+  <section class="pd-section pd-course">
+
+    <div class="pd-container">
+
+
+      <div class="pd-heading">
+
+        <small>
+          SPECIAL FREE COURSE
+        </small>
+
+        <h2>
+          Pitra Dosh Remedial Course
+        </h2>
+
+        <p>
+          Causes • Identification • Traditional Remedies
+        </p>
+
+      </div>
+
+
+      <div class="pd-free-banner">
+
+        <span>FREE COURSE</span>
+        &nbsp; • &nbsp;
+        LIVE ON ZOOM
+        &nbsp; • &nbsp;
+        24 &amp; 25 SEPTEMBER
+
+      </div>
+
+
+      <div class="pd-heading">
+
+        <small>
+          TOPICS COVERED
+        </small>
+
+        <h2>
+          इस Course में क्या सीखेंगे?
+        </h2>
+
+      </div>
+
+
+      <div class="pd-topic-grid">
+
+
+        <div class="pd-topic">
+          <div class="pd-number">1</div>
+
+          <strong>
+            पितृदोष का वास्तविक अर्थ
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">2</div>
+
+          <strong>
+            कुंडली में पितृदोष की पहचान
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">3</div>
+
+          <strong>
+            पितृदोष के प्रमुख लक्षण और ज्योतिषीय कारण
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">4</div>
+
+          <strong>
+            पितृ पूजा और श्राद्ध से जुड़ी महत्वपूर्ण जानकारी
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">5</div>
+
+          <strong>
+            पितरों को जल एवं पुष्प अर्पित करने की विधि
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">6</div>
+
+          <strong>
+            पितृदोष शांति के पारंपरिक उपाय
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">7</div>
+
+          <strong>
+            12 राशियों के अनुसार बताए जाने वाले उपाय
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">8</div>
+
+          <strong>
+            पितृदोष और कालसर्प दोष में अंतर
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">9</div>
+
+          <strong>
+            पितृ मंत्र एवं श्राद्ध से जुड़े महत्वपूर्ण विषय
+          </strong>
+        </div>
+
+
+        <div class="pd-topic">
+          <div class="pd-number">10</div>
+
+          <strong>
+            घर में पितरों से संबंधित मान्यताओं की जानकारी
+          </strong>
+        </div>
+
+
+      </div>
+
+
+      <div style="text-align:center;margin-top:32px;">
+
+        <a
+          href="https://chat.whatsapp.com/KJzXMa6eRyEFUX4fFdheus"
+          class="pd-cta pd-community-cta"
+          data-cta="whatsapp-community"
+          data-cta-location="topics"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join Free WhatsApp Community
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       EVENT DETAILS
+       ===================================================== -->
+
+  <section class="pd-section pd-event">
+
+    <div class="pd-container">
+
+
+      <div class="pd-heading">
+
+        <small>
+          EVENT DETAILS
+        </small>
+
+        <h2>
+          24 &amp; 25 September 2026
+        </h2>
+
+        <p>
+          Join the Free 2-Day Pitra Dosh Remedial Course
+        </p>
+
+      </div>
+
+
+      <div class="pd-event-box">
+
+
+        <div class="pd-event-grid">
+
+
+          <div class="pd-event-card">
+
+            <div class="pd-event-card-icon">
+              📅
+            </div>
+
+            <strong>
+              24 &amp; 25
+            </strong>
+
+            <span>
+              September 2026
+            </span>
+
+          </div>
+
+
+          <div class="pd-event-card">
+
+            <div class="pd-event-card-icon">
+              🎥
+            </div>
+
+            <strong>
+              LIVE
+            </strong>
+
+            <span>
+              On Zoom
+            </span>
+
+          </div>
+
+
+          <div class="pd-event-card">
+
+            <div class="pd-event-card-icon">
+              🆓
+            </div>
+
+            <strong>
+              FREE
+            </strong>
+
+            <span>
+              Course Admission
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="pd-event-center">
+
+          <h2>
+            Free Admission
+          </h2>
+
+          <p>
+
+            WhatsApp Community join करें और
+            course updates, Zoom session information
+            तथा upcoming free courses की जानकारी पाएं।
+
+          </p>
+
+
+          <a
+            href="https://chat.whatsapp.com/KJzXMa6eRyEFUX4fFdheus"
+            class="pd-cta pd-community-cta"
+            data-cta="whatsapp-community"
+            data-cta-location="event"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Free WhatsApp Community
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       BENEFITS
+       ===================================================== -->
+
+  <section class="pd-section pd-benefits">
+
+    <div class="pd-container">
+
+
+      <div class="pd-heading">
+
+        <small>
+          WHY JOIN
+        </small>
+
+        <h2>
+          Community में क्या मिलेगा?
+        </h2>
+
+        <p>
+
+          Pitra Dosh course के साथ आगे आने वाले
+          Astrology &amp; Spiritual learning sessions
+          के updates भी पाएं।
+
+        </p>
+
+      </div>
+
+
+      <div class="pd-benefit-grid">
+
+
+        <div class="pd-benefit">
+
+          <div class="pd-benefit-icon">
+            📚
+          </div>
+
+          <strong>
+            Free Learning
+          </strong>
+
+          <p>
+            Educational courses और learning sessions.
+          </p>
+
+        </div>
+
+
+        <div class="pd-benefit">
+
+          <div class="pd-benefit-icon">
+            🎥
+          </div>
+
+          <strong>
+            Live Sessions
+          </strong>
+
+          <p>
+            Upcoming live classes और masterclasses.
+          </p>
+
+        </div>
+
+
+        <div class="pd-benefit">
+
+          <div class="pd-benefit-icon">
+            📢
+          </div>
+
+          <strong>
+            Course Updates
+          </strong>
+
+          <p>
+            नए courses और sessions की information.
+          </p>
+
+        </div>
+
+
+        <div class="pd-benefit">
+
+          <div class="pd-benefit-icon">
+            🔱
+          </div>
+
+          <strong>
+            Spiritual Learning
+          </strong>
+
+          <p>
+            Jyotish, Healing, Meditation, NLP, Tantra &amp; Vastu.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       INSTRUCTOR
+       ===================================================== -->
+
+  <section class="pd-section pd-instructor">
+
+    <div class="pd-container">
+
+
+      <div class="pd-heading">
+
+        <small>
+          CONDUCTED BY
+        </small>
+
+        <h2>
+          Learn With Expert Guidance
+        </h2>
+
+      </div>
+
+
+      <div class="pd-instructor-grid">
+
+
+        <img
+          class="pd-instructor-photo"
+          src="https://i.ibb.co/VpWKshRt/IMG-20260920-WA0010.jpg"
+          alt="Tarun Thakur"
+          loading="lazy"
+        >
+
+
+        <div>
+
+          <h2>
+            Tarun Thakur
+          </h2>
+
+          <div class="pd-role">
+            ज्योतिषाचार्य | Vastu Consultant | Spiritual Expert
+          </div>
+
+          <p>
+
+            अपने पितरों से जुड़े विषयों को
+            traditional और ज्योतिषीय दृष्टिकोण से
+            समझने के लिए इस special course में शामिल हों।
+
+          </p>
+
+
+          <div class="pd-tags">
+
+            <span class="pd-tag">
+              Astrology
+            </span>
+
+            <span class="pd-tag">
+              Vastu
+            </span>
+
+            <span class="pd-tag">
+              Spirituality
+            </span>
+
+            <span class="pd-tag">
+              Pitra Dosh
+            </span>
+
+            <span class="pd-tag">
+              Traditional Practices
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       100+ FREE COURSES
+       ===================================================== -->
+
+  <section class="pd-section pd-library">
+
+    <div class="pd-container">
+
+
+      <div class="pd-heading">
+
+        <small>
+          FREE COURSE COMMUNITY
+        </small>
+
+        <h2>
+          100+ Astrology &amp; Spiritual Courses
+        </h2>
+
+        <p>
+
+          Pitra Dosh के अलावा community में
+          multiple learning topics के updates मिलेंगे।
+
+        </p>
+
+      </div>
+
+
+      <div class="pd-library-grid">
+
+
+        <div class="pd-library-card">
+          <div class="pd-library-card-icon">✦</div>
+          <strong>Jyotish / Astrology</strong>
+        </div>
+
+
+        <div class="pd-library-card">
+          <div class="pd-library-card-icon">◈</div>
+          <strong>Healing</strong>
+        </div>
+
+
+        <div class="pd-library-card">
+          <div class="pd-library-card-icon">◉</div>
+          <strong>Meditation</strong>
+        </div>
+
+
+        <div class="pd-library-card">
+          <div class="pd-library-card-icon">∞</div>
+          <strong>NLP</strong>
+        </div>
+
+
+        <div class="pd-library-card">
+          <div class="pd-library-card-icon">☯</div>
+          <strong>Tantra</strong>
+        </div>
+
+
+        <div class="pd-library-card">
+          <div class="pd-library-card-icon">⌂</div>
+          <strong>Vastu</strong>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       COMMUNITY CTA
+       ===================================================== -->
+
+  <section class="pd-section pd-community">
+
+    <div class="pd-container">
+
+
+      <div class="pd-community-box">
+
+
+        <div class="pd-heading" style="margin-bottom:25px;">
+
+          <small>
+            FREE WHATSAPP COMMUNITY
+          </small>
+
+          <h2>
+
+            Ready To Join The
+            <span class="pd-highlight">
+              Free Course?
+            </span>
+
+          </h2>
+
+
+          <p>
+
+            24 &amp; 25 September • LIVE ON ZOOM • FREE ADMISSION
+
+            <br>
+
+            Join the community to receive course information,
+            session updates and upcoming free course announcements.
+
+          </p>
+
+        </div>
+
+
+        <a
+          href="https://chat.whatsapp.com/KJzXMa6eRyEFUX4fFdheus"
+          class="pd-cta pd-community-cta"
+          data-cta="whatsapp-community"
+          data-cta-location="community"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join Free WhatsApp Community
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FAQ
+       ===================================================== -->
+
+  <section class="pd-section pd-faq">
+
+    <div class="pd-container">
+
+
+      <div class="pd-heading">
+
+        <small>
+          FAQ
+        </small>
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+
+      </div>
+
+
+      <div class="pd-faq-list">
+
+
+        <details>
+
+          <summary>
+            यह course कब है?
+          </summary>
+
+          <p>
+            यह special Pitra Dosh Remedial Course
+            24 और 25 September 2026 को आयोजित होगा।
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            क्या course completely free है?
+          </summary>
+
+          <p>
+            दिए गए course poster के अनुसार admission completely free है।
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Course किस platform पर होगा?
+          </summary>
+
+          <p>
+            Course LIVE ON ZOOM होगा।
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            इस course में कौन से topics होंगे?
+          </summary>
+
+          <p>
+            Pitra Dosh का अर्थ, कुंडली में पहचान,
+            ज्योतिषीय कारण, पितृ पूजा, श्राद्ध,
+            पारंपरिक उपाय और संबंधित महत्वपूर्ण topics।
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            WhatsApp Community क्यों join करें?
+          </summary>
+
+          <p>
+            Course updates, Zoom information और
+            upcoming free Astrology &amp; Spiritual courses
+            की जानकारी पाने के लिए।
+          </p>
+
+        </details>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FINAL CTA
+       ===================================================== -->
+
+  <section class="pd-final">
+
+    <div class="pd-container">
+
+
+      <h2>
+
+        Join The
+        <span class="pd-highlight">
+          Free Community
+        </span>
+
+      </h2>
+
+
+      <p>
+
+        Pitra Dosh Remedial Course
+        <br>
+        24 &amp; 25 September • LIVE ON ZOOM • FREE
+
+      </p>
+
+
+      <a
+        href="https://chat.whatsapp.com/KJzXMa6eRyEFUX4fFdheus"
+        class="pd-cta pd-community-cta"
+        data-cta="whatsapp-community"
+        data-cta-location="final"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join Free WhatsApp Community
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer class="pd-footer">
+
+    © 2026 Rudra Shivalaya Jyotish Anusandhan Kendra.
+    All Rights Reserved.
+
+  </footer>
+
+
+</div>
+
+
+<!-- =========================================================
+     TRACKING SCRIPT
+     
+     This does NOT load Meta Pixel.
+     It only uses Pixel if fbq already exists.
+
+     GTM:
+     Event = pd_community_click
+
+     Meta:
+     Custom Event = CommunityCTA_Click
+     ========================================================= -->
+
+<script>
+
+(function(){
+
+  function trackCommunityClick(location){
+
+    /* -----------------------------
+       GOOGLE TAG MANAGER
+       ----------------------------- */
+
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+
+      event:
+        'pd_community_click',
+
+      cta_name:
+        'Join Free WhatsApp Community',
+
+      cta_location:
+        location || 'unknown',
+
+      destination:
+        'whatsapp_community',
+
+      campaign:
+        'pitra_dosh_free_course'
+
+    });
+
+
+    /* -----------------------------
+       META PIXEL
+       Only fires if fbq exists
+       ----------------------------- */
+
+    if(typeof window.fbq === 'function'){
+
+      window.fbq(
+        'trackCustom',
+
+        'CommunityCTA_Click',
+
+        {
+          cta_name:
+            'Join Free WhatsApp Community',
+
+          cta_location:
+            location || 'unknown',
+
+          campaign:
+            'pitra_dosh_free_course'
+        }
+
+      );
+
+    }
+
+  }
+
+
+  /* -----------------------------
+     ALL CTA BUTTONS
+     ----------------------------- */
+
+  document.addEventListener(
+    'click',
+    function(event){
+
+      var button =
+        event.target.closest(
+          '.pd-community-cta'
+        );
+
+      if(!button){
+        return;
+      }
+
+      trackCommunityClick(
+
+        button.getAttribute(
+          'data-cta-location'
+        ) || 'unknown'
+
+      );
+
+    },
+    false
+  );
+
+
+})();
+
+</script>
